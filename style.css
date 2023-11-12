@@ -1,0 +1,56 @@
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+ * {
+  box-sizing: border-box;
+ }
+
+
+ body {
+  background: url('./images/breathe-2.jpg') no-repeat center/cover ;
+  background-position: 60% 0%; 
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+ }
+
+ .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 300px;
+    width: 300px;
+    margin: auto;
+    position: relative;
+    transform : scale(1)
+ }
+
+ .container p {
+  position: absolute;
+  top: -65px;
+  font-size: xx-large;
+ }
+
+ .gradient-circle {
+  background-image: conic-gradient(
+    #55b7a4 0%,
+    #4ca493 40%,
+    #fff 40%,
+    #fff 60%,
+    #336d62 60%,
+    #2a5b52 100%
+  );
+  height: 320px;
+  width: 320px;
+  position: absolute;
+  top: -170px;
+  left: -10px;
+  z-index: -2;
+  border-radius : 50%;
+ }
+
